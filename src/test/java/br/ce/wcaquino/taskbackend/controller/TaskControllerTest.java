@@ -47,7 +47,8 @@ public class TaskControllerTest {
 			controller.save(todo);
 			Assert.fail("Não deveria chegar nesse ponto!");
 		} catch (ValidationException e) {
-			Assert.assertEquals("Fill the due date", e.getMessage());
+			Assert.assertEquals("
+			Preencher a data de vencimento", e.getMessage());
 		}
 	}
 	
